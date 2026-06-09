@@ -1,0 +1,52 @@
+# ── Python ──────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Jupyter ──────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Model Checkpoints ────────────────
+checkpoints/*.pth
+checkpoints/*.pt
+
+# ── Data ─────────────────────────────
+data/recordings/
+*.wav
+*.flac
+*.mp3
+
+# ── Logs ─────────────────────────────
+logs/
+*.log
+
+# ── Results (generated plots) ────────
+results/plots/
+results/*.png
+
+# ── IDE / OS ─────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── Testing ──────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
