@@ -149,9 +149,13 @@ def run_epoch(
                 optimizer.step()
 
             total_loss += loss.item() * batch_x.size(0)
-            preds      = logits.argmax(dim=1)
-            correct   += (preds == batch_y).sum().item()
-            total     += batch_x.size(0)
+            
+            # Foolproof check: Ensure we take the argmax across the very last dimension (the 10 classes)
+            preds = torch.argmax(logits, dim=-1) 
+            
+            # Ensure predictions match the shape of the targets perfectly
+            correct += (preds.view(-1) == batch_y.view(-1)).sum().item()
+            total += batch_y.numel()
 
     return total_loss / total, correct / total
 
@@ -270,11 +274,11 @@ def train(args: argparse.Namespace) -> None:
     )
     scheduler = ReduceLROnPlateau(
         optimizer,
-        mode="max",
+        mode="min",
         factor=0.5,
         patience=5,
         min_lr=1e-6,
-        verbose=False,
+        
     )
     early_stop = EarlyStopping(patience=args.patience, mode="max")
 
@@ -308,7 +312,7 @@ def train(args: argparse.Namespace) -> None:
             model, val_loader, criterion, optimizer, device, is_train=False
         )
 
-        scheduler.step(val_acc)
+        scheduler.step(val_loss)
         current_lr = optimizer.param_groups[0]["lr"]
 
         history["train_loss"].append(train_loss)

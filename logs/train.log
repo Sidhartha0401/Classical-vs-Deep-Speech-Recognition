@@ -1,0 +1,134 @@
+2026-06-09 15:58:15  INFO      __main__  Using device: mps
+2026-06-09 15:58:15  INFO      __main__  Extractor: MFCCExtractor(n_mfcc=40, max_len=128, use_delta=True, n_channels=120)
+2026-06-09 15:58:15  INFO      data_loader  Discovered 3000 WAV files in '//Users/sidharthadurgam/Downloads/recordings'.
+2026-06-09 15:58:15  INFO      data_loader  Speaker split → train/val pool: 2500  |  test (spk-6): 500
+2026-06-09 15:58:15  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 15:58:21  INFO      data_loader  Feature cache built  (2500 samples).
+2026-06-09 15:58:21  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 15:58:22  INFO      data_loader  Feature cache built  (500 samples).
+2026-06-09 15:58:22  INFO      data_loader  Dataset sizes → train: 2000 | val: 500 | test: 500
+2026-06-09 15:58:22  INFO      model  CNNLSTM initialised — trainable parameters: 2,943,498
+2026-06-09 15:58:22  INFO      __main__  CNNLSTM(n_channels=120, n_classes=10, lstm_hidden=256, params=2,943,498)
+2026-06-09 16:00:05  INFO      __main__  Using device: mps
+2026-06-09 16:00:05  INFO      __main__  Extractor: MFCCExtractor(n_mfcc=40, max_len=128, use_delta=True, n_channels=120)
+2026-06-09 16:00:05  INFO      data_loader  Discovered 3000 WAV files in '//Users/sidharthadurgam/Downloads/recordings'.
+2026-06-09 16:00:05  INFO      data_loader  Speaker split → train/val pool: 2500  |  test (spk-6): 500
+2026-06-09 16:00:05  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 16:00:11  INFO      data_loader  Feature cache built  (2500 samples).
+2026-06-09 16:00:11  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 16:00:12  INFO      data_loader  Feature cache built  (500 samples).
+2026-06-09 16:00:12  INFO      data_loader  Dataset sizes → train: 2000 | val: 500 | test: 500
+2026-06-09 16:00:12  INFO      model  CNNLSTM initialised — trainable parameters: 2,943,498
+2026-06-09 16:00:12  INFO      __main__  CNNLSTM(n_channels=120, n_classes=10, lstm_hidden=256, params=2,943,498)
+2026-06-09 16:00:13  INFO      __main__  Starting training for up to 60 epochs (patience=12) …
+2026-06-09 16:00:22  INFO      __main__  Epoch   1/60  |  train loss: 1.1893  acc: 0.2365  |  val   loss: 0.6752  acc: 0.3760  |  lr: 3.00e-04  |  9.4s
+2026-06-09 16:00:23  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.3760)
+2026-06-09 16:00:25  INFO      __main__  Epoch   2/60  |  train loss: 0.9825  acc: 0.3095  |  val   loss: 0.4797  acc: 0.3140  |  lr: 3.00e-04  |  2.1s
+2026-06-09 16:00:27  INFO      __main__  Epoch   3/60  |  train loss: 1.0119  acc: 0.2950  |  val   loss: 0.9701  acc: 0.2740  |  lr: 3.00e-04  |  2.1s
+2026-06-09 16:00:29  INFO      __main__  Epoch   4/60  |  train loss: 1.1379  acc: 0.2615  |  val   loss: 1.2184  acc: 0.2780  |  lr: 3.00e-04  |  2.1s
+2026-06-09 16:00:31  INFO      __main__  Epoch   5/60  |  train loss: 0.9025  acc: 0.2925  |  val   loss: 0.5968  acc: 0.2960  |  lr: 3.00e-04  |  2.1s
+2026-06-09 16:00:33  INFO      __main__  Epoch   6/60  |  train loss: 0.6848  acc: 0.3010  |  val   loss: 0.3843  acc: 0.3440  |  lr: 3.00e-04  |  2.1s
+2026-06-09 16:00:35  INFO      __main__  Epoch   7/60  |  train loss: 0.9779  acc: 0.3020  |  val   loss: 0.5166  acc: 0.3240  |  lr: 1.50e-04  |  2.1s
+2026-06-09 16:00:37  INFO      __main__  Epoch   8/60  |  train loss: 0.7744  acc: 0.3295  |  val   loss: 0.4735  acc: 0.3080  |  lr: 1.50e-04  |  2.1s
+2026-06-09 16:00:39  INFO      __main__  Epoch   9/60  |  train loss: 0.7170  acc: 0.3120  |  val   loss: 2.1408  acc: 0.1060  |  lr: 1.50e-04  |  2.1s
+2026-06-09 16:00:41  INFO      __main__  Epoch  10/60  |  train loss: 0.7753  acc: 0.2990  |  val   loss: 0.4142  acc: 0.3420  |  lr: 1.50e-04  |  2.1s
+2026-06-09 16:00:43  INFO      __main__  Epoch  11/60  |  train loss: 1.0588  acc: 0.2345  |  val   loss: 0.6108  acc: 0.3220  |  lr: 1.50e-04  |  2.1s
+2026-06-09 16:00:45  INFO      __main__  Epoch  12/60  |  train loss: 0.8972  acc: 0.3065  |  val   loss: 0.5677  acc: 0.2940  |  lr: 1.50e-04  |  2.1s
+2026-06-09 16:00:48  INFO      __main__  Epoch  13/60  |  train loss: 0.8335  acc: 0.2680  |  val   loss: 0.4985  acc: 0.3280  |  lr: 7.50e-05  |  2.1s
+2026-06-09 16:00:48  INFO      __main__  Early stopping triggered at epoch 13 (no improvement for 12 epochs).
+2026-06-09 16:00:48  INFO      __main__  Training complete in 34.5 s  |  best val accuracy: 0.3760
+2026-06-09 16:00:48  INFO      __main__  Training curves saved to 'results/plots'.
+2026-06-09 16:07:01  INFO      __main__  Using device: mps
+2026-06-09 16:07:01  INFO      __main__  Extractor: MFCCExtractor(n_mfcc=40, max_len=128, use_delta=True, n_channels=120)
+2026-06-09 16:07:01  INFO      data_loader  Discovered 3000 WAV files in '//Users/sidharthadurgam/Downloads/recordings'.
+2026-06-09 16:07:01  INFO      data_loader  Speaker split → train/val pool: 2500  |  test (spk-6): 500
+2026-06-09 16:07:01  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 16:07:10  INFO      data_loader  Feature cache built  (2500 samples).
+2026-06-09 16:07:10  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 16:07:12  INFO      data_loader  Feature cache built  (500 samples).
+2026-06-09 16:07:12  INFO      data_loader  Dataset sizes → train: 2000 | val: 500 | test: 500
+2026-06-09 16:07:12  INFO      model  CNNLSTM initialised — trainable parameters: 2,943,498
+2026-06-09 16:07:12  INFO      __main__  CNNLSTM(n_channels=120, n_classes=10, lstm_hidden=256, params=2,943,498)
+2026-06-09 16:07:12  INFO      __main__  Starting training for up to 60 epochs (patience=12) …
+2026-06-09 16:07:16  INFO      __main__  Epoch   1/60  |  train loss: 1.0288  acc: 0.2785  |  val   loss: 0.8696  acc: 0.3040  |  lr: 3.00e-04  |  3.3s
+2026-06-09 16:07:16  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.3040)
+2026-06-09 16:07:18  INFO      __main__  Epoch   2/60  |  train loss: 1.3536  acc: 0.2495  |  val   loss: 0.8571  acc: 0.3740  |  lr: 3.00e-04  |  2.4s
+2026-06-09 16:07:18  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.3740)
+2026-06-09 16:07:20  INFO      __main__  Epoch   3/60  |  train loss: 1.0504  acc: 0.2910  |  val   loss: 2.1336  acc: 0.1460  |  lr: 3.00e-04  |  2.2s
+2026-06-09 16:07:23  INFO      __main__  Epoch   4/60  |  train loss: 0.7341  acc: 0.3050  |  val   loss: 0.6441  acc: 0.3120  |  lr: 3.00e-04  |  2.3s
+2026-06-09 16:07:25  INFO      __main__  Epoch   5/60  |  train loss: 0.6951  acc: 0.3095  |  val   loss: 1.4549  acc: 0.2420  |  lr: 3.00e-04  |  2.3s
+2026-06-09 16:07:27  INFO      __main__  Epoch   6/60  |  train loss: 0.8383  acc: 0.2825  |  val   loss: 0.6458  acc: 0.3000  |  lr: 3.00e-04  |  2.4s
+2026-06-09 16:07:30  INFO      __main__  Epoch   7/60  |  train loss: 0.6993  acc: 0.3020  |  val   loss: 0.7787  acc: 0.2760  |  lr: 3.00e-04  |  2.3s
+2026-06-09 16:07:32  INFO      __main__  Epoch   8/60  |  train loss: 1.0601  acc: 0.2470  |  val   loss: 0.8647  acc: 0.2680  |  lr: 3.00e-04  |  2.3s
+2026-06-09 16:07:34  INFO      __main__  Epoch   9/60  |  train loss: 1.0972  acc: 0.2325  |  val   loss: 1.2343  acc: 0.2040  |  lr: 1.50e-04  |  2.4s
+2026-06-09 16:07:37  INFO      __main__  Epoch  10/60  |  train loss: 0.8849  acc: 0.2630  |  val   loss: 0.6083  acc: 0.3060  |  lr: 1.50e-04  |  2.5s
+2026-06-09 16:07:39  INFO      __main__  Epoch  11/60  |  train loss: 0.8056  acc: 0.2675  |  val   loss: 0.7429  acc: 0.3000  |  lr: 1.50e-04  |  2.4s
+2026-06-09 16:07:42  INFO      __main__  Epoch  12/60  |  train loss: 0.7948  acc: 0.3005  |  val   loss: 0.7537  acc: 0.2820  |  lr: 1.50e-04  |  2.6s
+2026-06-09 16:07:44  INFO      __main__  Epoch  13/60  |  train loss: 0.8316  acc: 0.2855  |  val   loss: 0.7098  acc: 0.2720  |  lr: 1.50e-04  |  2.5s
+2026-06-09 16:07:47  INFO      __main__  Epoch  14/60  |  train loss: 0.7396  acc: 0.2640  |  val   loss: 0.5828  acc: 0.2840  |  lr: 1.50e-04  |  2.4s
+2026-06-09 16:07:47  INFO      __main__  Early stopping triggered at epoch 14 (no improvement for 12 epochs).
+2026-06-09 16:07:47  INFO      __main__  Training complete in 34.3 s  |  best val accuracy: 0.3740
+2026-06-09 16:07:47  INFO      __main__  Training curves saved to 'results/plots'.
+2026-06-09 16:13:17  INFO      __main__  Using device: mps
+2026-06-09 16:13:17  INFO      __main__  Extractor: MFCCExtractor(n_mfcc=40, max_len=128, use_delta=True, n_channels=120)
+2026-06-09 16:13:17  INFO      data_loader  Discovered 3000 WAV files in '//Users/sidharthadurgam/Downloads/recordings'.
+2026-06-09 16:13:17  INFO      data_loader  Speaker split → train/val pool: 2500  |  test (spk-6): 500
+2026-06-09 16:13:17  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 16:13:25  INFO      data_loader  Feature cache built  (2500 samples).
+2026-06-09 16:13:25  INFO      data_loader  Pre-extracting and caching MFCC features …
+2026-06-09 16:13:26  INFO      data_loader  Feature cache built  (500 samples).
+2026-06-09 16:13:26  INFO      data_loader  Dataset sizes → train: 2000 | val: 500 | test: 500
+2026-06-09 16:13:27  INFO      model  CNNLSTM initialised — trainable parameters: 2,943,498
+2026-06-09 16:13:27  INFO      __main__  CNNLSTM(n_channels=120, n_classes=10, lstm_hidden=256, params=2,943,498)
+2026-06-09 16:13:27  INFO      __main__  Starting training for up to 40 epochs (patience=10) …
+2026-06-09 16:13:30  INFO      __main__  Epoch   1/40  |  train loss: 1.7926  acc: 0.1595  |  val   loss: 1.2236  acc: 0.3380  |  lr: 1.00e-03  |  3.2s
+2026-06-09 16:13:30  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.3380)
+2026-06-09 16:13:32  INFO      __main__  Epoch   2/40  |  train loss: 1.4248  acc: 0.2935  |  val   loss: 1.3767  acc: 0.2380  |  lr: 1.00e-03  |  1.4s
+2026-06-09 16:13:33  INFO      __main__  Epoch   3/40  |  train loss: 1.9217  acc: 0.2145  |  val   loss: 2.1773  acc: 0.1280  |  lr: 1.00e-03  |  1.4s
+2026-06-09 16:13:35  INFO      __main__  Epoch   4/40  |  train loss: 2.0298  acc: 0.1770  |  val   loss: 2.1160  acc: 0.1580  |  lr: 1.00e-03  |  1.4s
+2026-06-09 16:13:36  INFO      __main__  Epoch   5/40  |  train loss: 2.0655  acc: 0.1630  |  val   loss: 2.0342  acc: 0.1700  |  lr: 1.00e-03  |  1.4s
+2026-06-09 16:13:38  INFO      __main__  Epoch   6/40  |  train loss: 1.8454  acc: 0.2440  |  val   loss: 1.8548  acc: 0.2680  |  lr: 1.00e-03  |  1.4s
+2026-06-09 16:13:39  INFO      __main__  Epoch   7/40  |  train loss: 1.6570  acc: 0.3050  |  val   loss: 1.4683  acc: 0.4820  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:39  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.4820)
+2026-06-09 16:13:40  INFO      __main__  Epoch   8/40  |  train loss: 1.4195  acc: 0.4460  |  val   loss: 1.1446  acc: 0.6260  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:40  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.6260)
+2026-06-09 16:13:42  INFO      __main__  Epoch   9/40  |  train loss: 1.1641  acc: 0.5830  |  val   loss: 1.0736  acc: 0.6600  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:42  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.6600)
+2026-06-09 16:13:43  INFO      __main__  Epoch  10/40  |  train loss: 1.0578  acc: 0.6290  |  val   loss: 1.0620  acc: 0.6420  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:45  INFO      __main__  Epoch  11/40  |  train loss: 0.9595  acc: 0.6830  |  val   loss: 0.8045  acc: 0.7660  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:45  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.7660)
+2026-06-09 16:13:46  INFO      __main__  Epoch  12/40  |  train loss: 0.8211  acc: 0.7870  |  val   loss: 0.9091  acc: 0.7600  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:48  INFO      __main__  Epoch  13/40  |  train loss: 0.7655  acc: 0.8230  |  val   loss: 0.7841  acc: 0.7920  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:48  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.7920)
+2026-06-09 16:13:49  INFO      __main__  Epoch  14/40  |  train loss: 0.9132  acc: 0.6615  |  val   loss: 0.8535  acc: 0.7300  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:50  INFO      __main__  Epoch  15/40  |  train loss: 0.6658  acc: 0.8440  |  val   loss: 0.8003  acc: 0.8120  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:51  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.8120)
+2026-06-09 16:13:52  INFO      __main__  Epoch  16/40  |  train loss: 0.9040  acc: 0.6860  |  val   loss: 0.9376  acc: 0.6760  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:53  INFO      __main__  Epoch  17/40  |  train loss: 0.8637  acc: 0.6420  |  val   loss: 0.7349  acc: 0.7960  |  lr: 5.00e-04  |  1.5s
+2026-06-09 16:13:55  INFO      __main__  Epoch  18/40  |  train loss: 0.7344  acc: 0.7420  |  val   loss: 0.8501  acc: 0.6700  |  lr: 5.00e-04  |  1.5s
+2026-06-09 16:13:56  INFO      __main__  Epoch  19/40  |  train loss: 0.6098  acc: 0.8670  |  val   loss: 0.7382  acc: 0.8220  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:56  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.8220)
+2026-06-09 16:13:58  INFO      __main__  Epoch  20/40  |  train loss: 0.5088  acc: 0.9265  |  val   loss: 0.6443  acc: 0.8640  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:13:58  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.8640)
+2026-06-09 16:13:59  INFO      __main__  Epoch  21/40  |  train loss: 0.7168  acc: 0.7630  |  val   loss: 0.6566  acc: 0.9100  |  lr: 5.00e-04  |  1.5s
+2026-06-09 16:13:59  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.9100)
+2026-06-09 16:14:01  INFO      __main__  Epoch  22/40  |  train loss: 0.6940  acc: 0.7490  |  val   loss: 0.7154  acc: 0.7440  |  lr: 5.00e-04  |  1.5s
+2026-06-09 16:14:02  INFO      __main__  Epoch  23/40  |  train loss: 0.5643  acc: 0.8865  |  val   loss: 0.5748  acc: 0.8500  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:04  INFO      __main__  Epoch  24/40  |  train loss: 0.4817  acc: 0.9385  |  val   loss: 0.6312  acc: 0.8840  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:05  INFO      __main__  Epoch  25/40  |  train loss: 0.4489  acc: 0.9420  |  val   loss: 0.7250  acc: 0.8440  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:06  INFO      __main__  Epoch  26/40  |  train loss: 0.5526  acc: 0.8685  |  val   loss: 0.7001  acc: 0.7900  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:08  INFO      __main__  Epoch  27/40  |  train loss: 0.4581  acc: 0.9330  |  val   loss: 0.5678  acc: 0.9280  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:08  INFO      __main__    ✓ New best checkpoint saved (val_acc=0.9280)
+2026-06-09 16:14:09  INFO      __main__  Epoch  28/40  |  train loss: 0.4171  acc: 0.9520  |  val   loss: 0.6342  acc: 0.9020  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:11  INFO      __main__  Epoch  29/40  |  train loss: 0.4027  acc: 0.9530  |  val   loss: 0.5884  acc: 0.9060  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:12  INFO      __main__  Epoch  30/40  |  train loss: 0.3991  acc: 0.9575  |  val   loss: 0.6708  acc: 0.8240  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:14  INFO      __main__  Epoch  31/40  |  train loss: 0.4578  acc: 0.9260  |  val   loss: 0.5582  acc: 0.8900  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:15  INFO      __main__  Epoch  32/40  |  train loss: 0.5643  acc: 0.8580  |  val   loss: 0.5361  acc: 0.8980  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:16  INFO      __main__  Epoch  33/40  |  train loss: 0.4145  acc: 0.9540  |  val   loss: 0.5736  acc: 0.8940  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:18  INFO      __main__  Epoch  34/40  |  train loss: 0.4104  acc: 0.9630  |  val   loss: 0.5225  acc: 0.9280  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:19  INFO      __main__  Epoch  35/40  |  train loss: 0.3910  acc: 0.9630  |  val   loss: 0.5011  acc: 0.9060  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:21  INFO      __main__  Epoch  36/40  |  train loss: 0.3622  acc: 0.9680  |  val   loss: 0.5052  acc: 0.9280  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:22  INFO      __main__  Epoch  37/40  |  train loss: 0.4005  acc: 0.9570  |  val   loss: 0.5541  acc: 0.9020  |  lr: 5.00e-04  |  1.4s
+2026-06-09 16:14:22  INFO      __main__  Early stopping triggered at epoch 37 (no improvement for 10 epochs).
+2026-06-09 16:14:22  INFO      __main__  Training complete in 54.7 s  |  best val accuracy: 0.9280
+2026-06-09 16:14:23  INFO      __main__  Training curves saved to 'results/plots'.
